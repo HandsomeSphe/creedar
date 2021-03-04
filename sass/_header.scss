@@ -1,0 +1,22 @@
+header{
+    background-color:$primary--color--3;
+    width:100%;
+    display:grid;
+    grid-template-rows:repeat(6,7rem);
+    grid-template-columns:repeat(12,7rem);
+
+/////////////////////////////+++++++++ HEADER MEDIA QUERIE ++++++++++///////////////////////////////
+    @media(max-width:320px){
+    background-color:rgb(10, 16, 32);
+    width:225%;
+    height:210vh;
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    grid-template-rows:repeat(3,1fr);
+    background-image: url(/img/two-dogs-chasing-each-other-969381.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+  
+  }
+}

@@ -1,0 +1,62 @@
+////////////////////////////   MY VARIABLES HERE //////
+
+////////********** PRIMARY COLORS ( main colors)*******////////////
+
+$primary--color--1:#fff;
+$primary--color--3:rgba(0, 0, 0,1);
+$primary--color--4:#8B1F18;
+$primary--color--5:#050505;
+//#1a1a00;
+//#333300;
+//#050505;
+
+
+////////********** SHADES OF GREY*******////////////
+
+
+$secondary--color--1:rgba(255,255,255, .5);
+$secondary--color--2:#ffffff;
+$secondary--color--3:#c4c4c4;
+$secondary--color--4:#C7C7C7;
+$secondary--color--5:#666600;
+$secondary--color--6:#3F3829;
+$secondary--color--7:#E5E5E5;
+
+
+
+////////********** FONT FAMILIES*******////////////
+
+$primary--font--1:Roboto;
+$primary--font--2:Palanquin Dark;
+$primary--font--3:Palanquin;
+$primary--font--4:Rasa;
+
+
+
+////////**********GLOBAL RESET*******////////////
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:inherit;
+}
+html{
+    box-sizing:border-box;
+}
+body{
+    font-size:62.5%;
+    font-family:$primary--font--1;
+    font-weight:300;
+    color:$secondary--color--4;
+    line-height:1.6;
+}
+@mixin colorGradient{
+    background-image:linear-gradient( $secondary--color--4 30%, $primary--color--3 );
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+    background-clip:text;
+}
+
+
